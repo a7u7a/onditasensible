@@ -1,0 +1,14 @@
+{
+  "name": "onditasensible",
+  "version": "1.0.0",
+  "description": "Bridge between PureData and browser",
+  "main": "bridge.js",
+  "scripts": {
+    "start": "node bridge.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "osc-js": "^2.3.0"
+  }
+}
