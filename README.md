@@ -7,8 +7,8 @@ Repositorio de ejemplo para enviar datos generados desde PureData para ser consu
 
 ## Para recibir mensajes OSC en el navegador
 - Clona este repositorio en la máquina donde recibirás los mensajes: `$ git clone git@github.com:a7u7a/puredata-osc-to-browser.git`
-- Luego: '$ npm install'
-- Luego: '$ npm start'
+- Luego: `$ npm install`
+- Luego: `$ npm start`
 - Output esperado: 
 ``` 
 [nodemon] 2.0.15
