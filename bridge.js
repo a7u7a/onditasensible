@@ -5,7 +5,7 @@ const config = {
     udpServer: {  // desde donde escucharemos mensajes OSC provenientes de pure data
         host: '0.0.0.0', // abierto a recibir mensajes de cualquier ip
         port: 9129, 
-    }, wsServer: { // desde donde enviaremos Websockets al browser
+    }, wsServer: { // desde donde enviaremos datos websockets al browser
         host: 'localhost',
         port: 8080
     }
@@ -13,5 +13,6 @@ const config = {
 const osc = new OSC({ plugin: new OSC.BridgePlugin(config) })
 osc.open()
 
-// para debug
-// osc.on('/test', message => { console.log('msg', message); })
+// opcionales solo para debug
+osc.on('/amp', message => { console.log('msg', message); })
+osc.on('/frec', message => { console.log('msg', message); })
