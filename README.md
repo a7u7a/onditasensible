@@ -2,7 +2,8 @@
 Repositorio de ejemplo para recibir datos enviados desde PureData para ser consumidos por un [cuaderno de Observable](https://observablehq.com/@esrs/puredata-to-observable). Utiliza node y [osc-js](https://github.com/adzialocha/osc-js) en modo `BridgePlugin` para crear un servidor puente que escucha mensajes OSC recibidos via UDP y los publica mediante un servidor de WebSockets. Posteriormente usaremos `osc-js` (nuevamente) en modo `WebsocketClientPlugin` para parsear WebSockets como mensajes OSC en el navegador.
 
 ## Modo de uso
-- Usa el patch de ejemplo `puredata/osc_send.pd` como base para adaptar tu propio patch
+- Usa el patch de ejemplo `puredata/osc_send.pd` como base para adaptar tu propio patch: 
+![patch de ejemplo](patch.png)
 - Clona este repositorio en la máquina donde recibirás los mensajes: `$ git clone git@github.com:a7u7a/puredata-osc-to-browser.git`
 - Luego: '$ npm install'
 - Luego: '$ npm start'
