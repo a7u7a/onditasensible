@@ -4,11 +4,12 @@
   "description": "Bridge between PureData and browser",
   "main": "bridge.js",
   "scripts": {
-    "start": "node bridge.js"
+    "start": "nodemon bridge.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "nodemon": "^2.0.15",
     "osc-js": "^2.3.0"
   }
 }
