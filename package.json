@@ -1,10 +1,10 @@
 {
-  "name": "onditasensible",
+  "name": "puredata-osc-to-browser",
   "version": "1.0.0",
-  "description": "Bridge between PureData and browser",
+  "description": "Bridge between PureData and browser example",
   "main": "bridge.js",
   "scripts": {
-    "start": "nodemon bridge.js"
+    "start": "nodemon bridgeServer.js"
   },
   "author": "",
   "license": "MIT",
