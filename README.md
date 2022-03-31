@@ -1,8 +1,7 @@
-# onditasensible
-
+# Envia datos desde PureData al navegador
 Repositorio de ejemplo para recibir datos enviados desde PureData para ser consumidos por un cuaderno de Observable. Utiliza [osc-js](https://github.com/adzialocha/osc-js) en modo `BridgePlugin` para crear un servidor puente que escucha mensajes OSC recibidos via UDP y los publica mediante un servidor de WebSockets. Posteriormente usaremos `osc-js` (nuevamente) en modo `WebsocketClientPlugin` para parsear websockets como mensajes OSC en el navegador.
 
-## Cómo enviar datos desde PureData al navegador
+## Cómo usar
 - Usa el patch de ejemplo `puredata/osc_send.pd` como base para adaptar tu propio patch
 - Clona este repositorio en la máquina donde recibirás los mensajes
 - Luego: '$ npm install'
