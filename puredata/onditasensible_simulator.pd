@@ -1,5 +1,5 @@
-#N canvas 659 26 635 771 12;
-#X floatatom 485 91 5 0 0 0 - - - 0;
+#N canvas -133 100 635 737 12;
+#X floatatom 487 22 5 0 0 0 - - - 0;
 #X obj 192 637 list prepend send;
 #X obj 192 675 list trim;
 #X obj 86 834 netsend -u -b;
@@ -7,13 +7,13 @@
 #X obj 342 730 oscparse;
 #X floatatom 86 881 5 0 0 0 - - - 0;
 #X obj 342 767 print osc debug;
-#X floatatom 485 1 5 0 10 0 - - - 0;
+#X floatatom 488 111 5 0 10 0 - - - 0;
 #X msg 131 751 connect localhost 9129;
-#X obj 488 61 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#X obj 490 -8 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 485 26 oscformat -f f /ampZ;
-#X obj 486 124 oscformat -f f /freqZ;
-#X obj 488 -24 hsl 200 15 0 10 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#X obj 488 136 oscformat -f f /ampZ;
+#X obj 488 55 oscformat -f f /freqZ;
+#X obj 491 86 hsl 200 15 0 10 0 0 empty empty empty -2 -8 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X floatatom 488 195 5 0 0 0 - - - 0;
 #X obj 491 169 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
