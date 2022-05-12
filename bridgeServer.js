@@ -14,5 +14,11 @@ const osc = new OSC({ plugin: new OSC.BridgePlugin(config) })
 osc.open()
 
 // opcionales solo para debug
-osc.on('/amp', message => { console.log('msg', message); })
-osc.on('/frec', message => { console.log('msg', message); })
+osc.on('/ampZ', message => { console.log('msg', message); })
+osc.on('/frecZ', message => { console.log('msg', message); })
+osc.on('/ampQ', message => { console.log('msg', message); })
+osc.on('/frecQ', message => { console.log('msg', message); })
+osc.on('/ampS', message => { console.log('msg', message); })
+osc.on('/frecS', message => { console.log('msg', message); })
+osc.on('/ampSin', message => { console.log('msg', message); })
+osc.on('/frecSin', message => { console.log('msg', message); })

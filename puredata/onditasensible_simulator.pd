@@ -1,0 +1,79 @@
+#N canvas 659 26 635 771 12;
+#X floatatom 485 91 5 0 0 0 - - - 0;
+#X obj 192 637 list prepend send;
+#X obj 192 675 list trim;
+#X obj 86 834 netsend -u -b;
+#X msg 133 793 disconnect;
+#X obj 342 730 oscparse;
+#X floatatom 86 881 5 0 0 0 - - - 0;
+#X obj 342 767 print osc debug;
+#X floatatom 485 1 5 0 10 0 - - - 0;
+#X msg 131 751 connect localhost 9129;
+#X obj 488 61 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 485 26 oscformat -f f /ampZ;
+#X obj 486 124 oscformat -f f /freqZ;
+#X obj 488 -24 hsl 200 15 0 10 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 488 195 5 0 0 0 - - - 0;
+#X obj 491 169 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 488 224 oscformat -f f /freqQ;
+#X floatatom 488 281 5 0 0 0 - - - 0;
+#X obj 491 255 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 488 310 oscformat -f f /ampQ;
+#X floatatom 487 370 5 0 0 0 - - - 0;
+#X obj 490 344 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 487 456 5 0 0 0 - - - 0;
+#X obj 490 430 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 487 399 oscformat -f f /freqS;
+#X obj 487 485 oscformat -f f /ampS;
+#X floatatom 487 544 5 0 0 0 - - - 0;
+#X obj 490 518 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 487 630 5 0 0 0 - - - 0;
+#X obj 490 604 hsl 200 15 0 50 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 487 573 oscformat -f f /freqSin;
+#X obj 487 659 oscformat -f f /ampSin;
+#X connect 0 0 12 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 7 0;
+#X connect 8 0 11 0;
+#X connect 9 0 3 0;
+#X connect 10 0 0 0;
+#X connect 11 0 1 0;
+#X connect 11 0 5 0;
+#X connect 12 0 1 0;
+#X connect 12 0 5 0;
+#X connect 13 0 8 0;
+#X connect 14 0 16 0;
+#X connect 15 0 14 0;
+#X connect 16 0 5 0;
+#X connect 16 0 1 0;
+#X connect 17 0 19 0;
+#X connect 18 0 17 0;
+#X connect 19 0 5 0;
+#X connect 19 0 1 0;
+#X connect 20 0 24 0;
+#X connect 21 0 20 0;
+#X connect 22 0 25 0;
+#X connect 23 0 22 0;
+#X connect 24 0 5 0;
+#X connect 24 0 1 0;
+#X connect 25 0 5 0;
+#X connect 25 0 1 0;
+#X connect 26 0 30 0;
+#X connect 27 0 26 0;
+#X connect 28 0 31 0;
+#X connect 29 0 28 0;
+#X connect 30 0 5 0;
+#X connect 30 0 1 0;
+#X connect 31 0 5 0;
+#X connect 31 0 1 0;
